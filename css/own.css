@@ -177,6 +177,13 @@ body {
 	z-index: -50;
 	position: relative;
 }
+.check_in {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.check_in p {
+	font-size: 1.9rem;
+}/*
 /*--------------------------------Nasza oferta -------------------*/
 #oferta {
 	position: relative;
@@ -184,7 +191,6 @@ body {
 .NO {
 	margin-top: -10%;
     color: #fff;
-    /*font-size: 2.5em;*/
     text-shadow: 0px 4px 6px black;
 }
 .KOS {
@@ -245,7 +251,6 @@ body {
 	width: 17%;
 	margin: auto;
 	position: absolute;
-	/*z-index: 100;*/
 	text-shadow: 0px 4px 6px black;
 	display: block;
 }
@@ -253,39 +258,15 @@ body {
 	    color: #fff;
     text-shadow: 0px 4px 6px black;
     	position: absolute;
-    /*margin-top: -21%;*/
     margin-left: 25%;
-    /* position: absolute; */
-    /* z-index: 100; */
     font-family: 'Amiko';
-    /* display: inline-block; */
-	/*color: #fff;
-	text-shadow: 0px 4px 6px black;
-	margin-top: auto;
-	margin-left: 30%;
-
-	/*z-index: 100;*/
-	/*font-family: 'Amiko';
-	    display: inline-block;*/
 }
 .mapa {
     color: #fff;
     text-shadow: 0px 4px 6px black;
     position: absolute;
-    /* z-index: 100; */
-    /*margin-top: -14%;*/
     margin-left: 55%;
     font-family: 'Amiko';
-    /* display: inline-block; */
-
-	/*color: #fff;
-	text-shadow: 0px 4px 6px black;
-	position: absolute;
-	/*z-index: 100;*/
-	/*margin-top: auto;
-	margin-left: 65%;
-	font-family: 'Amiko';
-	    display: inline-block;*/
 }
 .mapa li a {
 	color: #fff;
@@ -315,6 +296,7 @@ body {
 }
 .well-sm {
 	background-color: #fff;
+	box-sizing: border-box;
 }
 .well {
 	border: 1px solid #fff;
@@ -324,21 +306,6 @@ body {
 	max-width: 1000px;
 
 }
-.check_in p {
-	font-size: 1.9rem;
-}/*
-label {
-	/*padding-right: 2%;*/
-	/*font-weight: normal;
-	/*font-size: 2rem;*/
-	/*padding: 0;
-	padding-right: 2%;
-	display: inline-block;
-	max-width: 98%;
-	margin-bottom: 5px;
-	font-weight: normal;
-	width: 1;
-}*/
 #user-id,
 #email-id,
 #phone-id,
@@ -358,41 +325,6 @@ label {
     line-height: 0.428571;
 	position: absolute;
 }
-/*
-.tel {
-	margin-left: 4%;
-}
-.pyt {
-	margin-left: 7.5%;
-}
-
-/*
-#user-id {
-    border-bottom: #578039 solid 2px;
-    border-top: #ffffff 0px;
-}
-#email-id {
-	border-bottom: #578039 solid 2px;
-    border-top: #ffffff 0px;
-}
-#phone-id {
-	border-bottom: #578039 solid 2px;
-    border-top: #ffffff 0px;
-    width: 30rem;
-}/*
-.telefon {
-    position: absolute;
-}
-#quest-id {
-    border-bottom: #578039 solid 2px;
-    height: 5rem;
-    border-top: #ffffff 0px;
-    width: 30rem;
-}
-.pytanie {
-    width: 30rem;
-}
-*/
 footer {
 	background-color: #578039;
 	height: 55px;
@@ -471,6 +403,21 @@ footer p {
     #klienci {
     	display: block;
     }
+    .telefon {
+    	padding-right: 11%;
+    }
+    .Iin {
+    	padding-right: 11%;
+    }
+    .Em {
+    	padding-right: 11%;
+    }
+    .pytanie {
+    	padding-right: 11%;
+    }
+        .btn {
+    	margin-left: 23%;
+    }
 }
 @media (min-width: 1024px) {
 	.carousel-caption h2 {
@@ -488,19 +435,45 @@ footer p {
     .NO {
     font-size: 4rem;
     }
+    .btn {
+    	margin-left: 15%;
+    }
+    .telefon {
+    	padding-right: 2%;
+    }
+    .Iin {
+    	padding-right: 2%;
+    }
+    .Em {
+    	padding-right: 2%;
+    }
+    .pytanie {
+    	padding-right: 2%;
+    }
+        .btn {
+    margin-left: 43%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    }
 }
 @media (min-width: 1366px) {
+	.ONAS {
+    font-size: 4.5rem;
+    }
 	.NU {
-	 	font-size: 5rem;
+	 	font-size: 4.5rem;
 	 }
 	.PP {
-    font-size: 5rem;
+    font-size: 4.5rem;
     }
     .NO {
-    font-size: 5rem;
+    font-size: 4.5rem;
     }
-
+    .btn {
+    margin-left: 53%;
+    }
 }
+
 
 /*
 @font-face {
