@@ -6,6 +6,12 @@ body {
 	font-family: 'bebas_neueregular';
 	font-size: 1.4rem;
 	color: #1d340d;
+  margin-left: 0%;
+  margin-right: 0;
+}
+.row {
+  margin-left: 0%;
+  margin-right: 0%;
 }
 .btn-success {
   background-color: #1abc9c;
@@ -74,7 +80,8 @@ body {
   max-height: 900px;
 }
 .carousel .item img {
-	width: 100%;
+  width: 95.6%;
+  margin-left: 2.4%;
 }
 .carousel-caption {
   top: 90px;
@@ -98,7 +105,7 @@ body {
     text-shadow: 0px 4px 6px black;
 }
 .green_arrow img {
-	/*position: relative;*/
+	position: relative;
 	z-index: -50;
 }
 .earth {
@@ -240,51 +247,48 @@ body {
 	padding-top: 6rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	height: 30rem;
+	height: 25rem;
 	width: 100%;
-    margin: 0 auto;
-    display: inline-block;
-    background: url(../grafiki/pasek_liscie.jpg) repeat 0 1000px fixed;
-    position: relative;
+  display: inline-block;
+  background: url(../grafiki/pasek_liscie.jpg) repeat 0 1000px fixed;
+  position: relative;
 }
-.biale_logo {
-	width: 17%;
-	margin: auto;
+    .biale_logo {
 	position: absolute;
-	text-shadow: 0px 4px 6px black;
-	display: block;
 }
-.adres {
-	    color: #fff;
+.address {
+	   color: #fff;
     text-shadow: 0px 4px 6px black;
-    	position: absolute;
-    margin-left: 25%;
+    position: absolute;
     font-family: 'Amiko';
 }
 .mapa {
     color: #fff;
     text-shadow: 0px 4px 6px black;
     position: absolute;
-    margin-left: 55%;
     font-family: 'Amiko';
+    text-align: left;
 }
 .mapa li a {
 	color: #fff;
 	text-shadow: 0px 4px 6px black;
 	font-family: 'Amiko';
 }
+.mapa li {
+  text-align: left;
+}
 /*-----------------formularz -----------------------*/
-
 .formul h3 {
 	color: #578039;
 	padding-top: 2%;
-	padding-bottom: 3%;
 	font-size: 3rem;
-	position: relative;
-
 }
 .formularz label {
 	color: #578039;
+}
+label {
+  font-weight: normal;
+  display: table;
 }
 .form-group,
 .form-control {
@@ -304,7 +308,6 @@ body {
 	padding-top: 2%;
 	padding-right: 7%;
 	max-width: 1000px;
-
 }
 #user-id,
 #email-id,
@@ -331,21 +334,24 @@ footer {
 	width: 100%;
 	text-align: center;
 	position: absolute;
+  margin-top: 3%;
 }
 footer p {
 	padding-top: 1.3%;
     font-family: 'Amiko';
     font-size: 0.9em;
 }
-
+/*--------------------------------media--------------------*/
 @media (min-width: 320px) {
+  #slider {
+    display: none;
+  }
+  #onas {
+    margin-top: 35%;
+  }
 	.NU {
 	font-size: 1.5rem;
 	 }
-	 .carousel-caption h2 {
- 	font-size: 1.5rem;
- 	margin-top: -45%;
-	}
 	.ONAS {
     font-size: 1.5rem;
     }
@@ -358,17 +364,82 @@ footer p {
     #klienci {
     	display: none;
     }
+    .biale_logo {
+    width: 50%;
+    display: inline-block;
+    }
+    .address {
+      font-size: 1.5rem;
+      width: 75%;
+      margin-top: -5%;
+    }
+    .mapa_strony {
+      display: none;
+    }
+    .btn {
+      margin-left: 37%;
+      margin-bottom: 2%;
+    }
+    .formul h3 {
+    color: #578039;
+    padding-top: 1%;
+    font-size: 1.9rem;
+    margin-top: 0%;
+    padding-bottom: 4%;
+    }
+    .form_block {
+    margin-top: 18%;
+    }
+    .calendar {
+      display: none;
+    }
 }
 @media (min-width: 480px) {
-	.NU {
+    #onas {
+    margin-top: 22%;
+    }
+	 .NU {
 	 	font-size: 2rem;
 	 }
+    .ONAS {
+    font-size: 2rem;
+    }
+    .PP {
+    font-size: 2rem;
+    }
+    .NO {
+    font-size: 2rem;
+    }
 	 #klienci {
-    	display: none;
+    display: all;
+    }
+    .biale_logo {
+    width: 45%;
+    display: inline-block;
+    }
+     .address {
+      font-size: 1.5rem;
+      width: 75%;
+      margin-top: -5%;
+    }
+    .formul h3 {
+    color: #578039;
+    font-size: 2.2rem;
+    margin-top: 0%;
+    padding-bottom: 4%;
+    }
+    .form_block {
+      margin-top: 8%;
+    }
+    .calendar {
+    display: none;
     }
 }
 @media (min-width: 640px) {
-	.carousel-caption h2 {
+  #slider {
+    display: inline-block;
+  }	
+  .carousel-caption h2 {
  	 	font-size: 4rem;
 	}
 	.NU {
@@ -377,6 +448,9 @@ footer p {
 	.ONAS {
     font-size: 2.5rem;
     }
+    #onas {
+    margin-top: auto;
+  }
     .PP {
     font-size: 2.5rem;
     }
@@ -384,7 +458,36 @@ footer p {
     font-size: 2.5rem;
     }
     #klienci {
-    	display: none;
+    	display: inline-block;
+    }
+    .biale_logo {
+      width: 25%;
+      display: none;
+    }
+    .address {
+      font-size: 1.5rem;
+      margin-left: 6%;
+      width: 50%
+
+    }
+    .mapa_strony {
+      font-size: 1.5rem;
+      display: block;
+      width: 40%;
+      margin-left: 50%;
+      margin-top: -5%;
+    }
+      .OUT_text {
+     margin-top: -2%;
+    }
+    .sklep {
+      display: none;
+    }
+    .warsztat {
+      display: none;
+    }
+    .zaklad {
+      display: none;
     }
 }
 @media (min-width: 768px) {
@@ -412,11 +515,28 @@ footer p {
     .Em {
     	padding-right: 11%;
     }
-    .pytanie {
-    	padding-right: 11%;
-    }
-        .btn {
+    .btn {
     	margin-left: 23%;
+    }
+    .OUT_text {
+     margin-top: -12%;
+    }
+    .calendar {
+    display: block;
+    transform:rotate(20deg); -webkit-transform:rotate(20deg); 
+    -moz-transform:rotate(20deg); -o-transform:rotate(20deg);
+    }
+    .sklep {
+      display: block;
+      max-width: 98%;
+    }
+    .warsztat {
+      display: block;
+      max-width: 95%;
+    }
+    .zaklad {
+      display: block;
+      max-width: 90%;
     }
 }
 @media (min-width: 1024px) {
@@ -435,9 +555,6 @@ footer p {
     .NO {
     font-size: 4rem;
     }
-    .btn {
-    	margin-left: 15%;
-    }
     .telefon {
     	padding-right: 2%;
     }
@@ -450,31 +567,134 @@ footer p {
     .pytanie {
     	padding-right: 2%;
     }
-        .btn {
-    margin-left: 43%;
+    .btn {
+    margin-left: 33%;
     margin-top: 1%;
     margin-bottom: 2%;
     }
+    .biale_logo {
+    width: 20%;
+    display: block;
+    margin-left: 6%;
+    }
+    .address {
+    font-size: 1.5rem;
+    margin-left: 28%;
+    margin-top: -2%;
+    }
+    .mapa_strony {
+      font-size: 1.5rem;
+       margin-left: 52%;
+      margin-top: -2%;
+    }
+    .formul h3 {
+    color: #578039;
+    font-size: 2.2rem;
+    margin-top: 0%;
+    padding-bottom: 4%;
+    }
+    .form_block {
+      margin-top: 0%;
+    }
+    .formul {
+      margin-left: 12%;
+    }
 }
 @media (min-width: 1366px) {
-	.ONAS {
+	 .ONAS {
     font-size: 4.5rem;
     }
-	.NU {
+	 .NU {
 	 	font-size: 4.5rem;
 	 }
-	.PP {
+	 .PP {
     font-size: 4.5rem;
     }
     .NO {
     font-size: 4.5rem;
     }
     .btn {
-    margin-left: 53%;
+    margin-left: 55%;
+    }
+    .biale_logo {
+    width: 15%;
+    display: block;
+    }
+    .address {
+    font-size: 1.5rem;
+    margin-left: 29%;
+    margin-top: -2%;
+    }
+    .mapa_strony {
+    font-size: 1.5rem;
+    margin-left: 51%;
+    margin-top: -2%;
+    }
+    .btn {
+    margin-left: 27%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    }
+    .formul {
+      margin-left: 12%;
     }
 }
-
-
+.OUT_text {
+  font-family: 'Amiko';
+  padding-bottom: 2%;
+  line-height: 2em;
+  text-indent: 2px;
+  margin-top: -2%;
+  margin-left: 2%;
+}
+.OUT_text li {
+  list-style-type: disc;
+  line-height: 2.5em;
+}
+.calendar {
+  max-height: 35rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  margin-top: -5rem;
+} 
+.sklep {
+  margin-top: -2.5rem;
+}
+.warsztat {
+  margin-top: -3%;
+  margin-bottom: 5rem;
+  max-width: 95%
+}
+.zaklad {
+  margin-top: 2rem;
+ }
+ .sprawozdania {
+  max-width: 50%;
+  text-align: right;
+ }
+.podzial {
+  font-family: 'Amiko';
+  line-height: 1.9em;
+  list-style-type: disc;
+  margin-left: 5rem;
+}
+.srodowisko {
+  font-family: 'Amiko';
+  line-height: 2.5rem;
+  list-style-type: disc;
+  margin-left: 5rem;
+}
+.srodowisko ul {
+    font-size: 5rem;
+    /*font-weight: normal;
+    /*text-decoration: underline;
+    /*background: url(../grafiki/lista.jpg) no-repeat left;*/
+   /* padding-left: 10px;*/
+    /*float: left;*/
+    /*clear: both;*/
+    /*display: inline-block;
+    text-decoration: none;
+}*/
 /*
 @font-face {
     font-family: 'bebas_neueregular';
